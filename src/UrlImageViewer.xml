@@ -8,14 +8,14 @@
     <icon/>
     <properties>
         <propertyGroup caption="Data source">
-            <property key="url" type="expression">
+            <property key="url" type="expression" required="true">
                 <caption>Image URL</caption>
                 <description>Expression for accessing image url string</description>
                 <returnType type="String" />
             </property>
-            <property key="sampleText" type="string" required="false">
-                <caption>Default value</caption>
-                <description>Sample text input</description>
+            <property key="defaultImage" type="image" required="false">
+                <caption>Default Image</caption>
+                <description>Image displayed if URL is not available</description>
             </property>
         </propertyGroup>
         <propertyGroup caption="Appearance">

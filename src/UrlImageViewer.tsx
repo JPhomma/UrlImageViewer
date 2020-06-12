@@ -7,7 +7,11 @@ import "./ui/UrlImageViewer.css";
 
 class UrlImageViewer extends Component<UrlImageViewerContainerProps> {
     render(): ReactNode {
-        return <ImageContainer url={this.props.url.value} height={this.props.height} width={this.props.width} />;
+        return <ImageContainer 
+                    url={this.props.url.value} 
+                    height={this.props.height} 
+                    width={this.props.width} 
+                    defaultImage={this.props.defaultImage?.value}/>;
     }
 }
 

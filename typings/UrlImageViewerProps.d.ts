@@ -4,7 +4,7 @@
  * @author Mendix UI Content Team
  */
 import { CSSProperties } from "react";
-import { DynamicValue } from "mendix";
+import { DynamicValue, WebImage } from "mendix";
 
 export interface UrlImageViewerContainerProps {
     name: string;
@@ -12,7 +12,7 @@ export interface UrlImageViewerContainerProps {
     style?: CSSProperties;
     tabIndex: number;
     url: DynamicValue<string>;
-    sampleText?: string;
+    defaultImage?: DynamicValue<WebImage>;
     height: number;
     width: number;
 }
@@ -21,7 +21,7 @@ export interface UrlImageViewerPreviewProps {
     class: string;
     style: string;
     url: string;
-    sampleText: string;
+    defaultImage: string;
     height: number | null;
     width: number | null;
 }
